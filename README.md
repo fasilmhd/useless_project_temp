@@ -15,7 +15,8 @@
 - Member 3: Adarsh - CET
 
 ### Project Description
-A deliberately useless but polished website for bored people. Click the button, reach 100% boredom, achieve absolutely nothing.
+FasiTracker is a fun spider-sighting tracker with AI-powered Fasi detection, location tracking, and an interactive map.
+A completely unnecessary but entertaining project built to make spider tracking unnecessarily advanced. 🕷️😂.
 
 
 ### The Problem (that doesn't exist)
@@ -27,10 +28,14 @@ no solution
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- **Languages:** TypeScript, HTML5, CSS3
-- **Framework:** React 18 (with Vite 5)
-- **Libraries:** None (zero external UI/logic dependencies)
-- **Tools:** Vite (bundler), TypeScript compiler, GitHub Pages (hosting)
+-Languages: JavaScript, HTML5, CSS3
+-Framework: None (Vanilla JavaScript)
+-Libraries: Supabase JavaScript Client, Leaflet.js, face-api.js
+-AI/ML: Face Detection and Face Recognition using face-api.js
+-Database: Supabase PostgreSQL
+-Storage: Supabase Storage
+-Maps: Leaflet.js with OpenStreetMap
+-Tools: Acode, Supabase
 
 
 For Hardware:
@@ -39,17 +44,19 @@ nothing
 ### Implementation
 For Software:
 
-# Installation
-```bash```
+#Installation
+
+bash
 git clone https://github.com/fasilmhd/useless_project_temp.git
 cd useless_project_temp
-npm install
+
 
 
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
+
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
