@@ -1,0 +1,9 @@
+/* Minimal global reset — all app styles live in App.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
