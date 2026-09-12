@@ -2,50 +2,50 @@
 
 
 
-# [Project Name] 🎯
+# Bored 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Spider
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: fasil & adarsh - CET
+- Member 2: Fasil - CET
+- Member 3: Adarsh - CET
 
 ### Project Description
-[2-3 lines about what your project does]
+A deliberately useless but polished website for bored people. Click the button, reach 100% boredom, achieve absolutely nothing.
+
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Just created
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+no solution
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- **Languages:** TypeScript, HTML5, CSS3
+- **Framework:** React 18 (with Vite 5)
+- **Libraries:** None (zero external UI/logic dependencies)
+- **Tools:** Vite (bundler), TypeScript compiler, GitHub Pages (hosting)
+
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+nothing
 
 ### Implementation
 For Software:
+
 # Installation
-[commands]
+```bash```
+git clone https://github.com/fasilmhd/useless_project_temp.git
+cd useless_project_temp
+npm install
 
-# Run
-[commands]
 
-### Project Documentation
-For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
