@@ -1,32 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😐</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#0a0a0f" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FasiTracker 🕷️</title>
 
-    <!-- SEO -->
-    <title>BOREDAM — How Bored Are You?</title>
-    <meta name="description" content="A deliberately useless but polished website for bored people. Click the button. Reach 100%. Achieve absolutely nothing." />
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="BOREDAM — How Bored Are You?" />
-    <meta property="og:description" content="Click the button. Reach 100%. Achieve absolutely nothing." />
-    <meta property="og:type" content="website" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+</head>
 
-    <!-- Mobile -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="BOREDAM" />
+<body>
 
-    <!-- Google Fonts preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <header>
+    <h1>🕷️ FasiTracker</h1>
+    <p>Peter Sighting Tracker</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Report a Sighting</h2>
+
+      <label for="photo">Spider Photo</label>
+
+      <input
+        id="photo"
+        type="file"
+        accept="image/*"
+        capture="environment"
+      >
+
+      <img id="preview" class="preview" alt="Spider preview">
+
+      <div class="ai-box">
+  <h3>🧠 Fasi AI Detection</h3>
+  <p id="aiStatus">Loading face recognition...</p>
+      </div>
+
+      <label for="name">who is that</label>
+
+      <input
+        id="name"
+        type="text"
+        placeholder="who is that"
+        maxlength="80"
+      >
+
+      <label for="notes">Notes</label>
+
+      <textarea
+        id="notes"
+        placeholder="What did you observe?"
+        maxlength="500"
+      ></textarea>
+
+      <button id="locationBtn">
+        📍 Get Location
+      </button>
+
+      <p id="location">Location not captured</p>
+
+      <button id="reportBtn" class="report">
+        🕷️ Report Sighting
+      </button>
+
+      <p id="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>🗺️ Map</h2>
+      <div id="map"></div>
+    </section>
+
+    <section class="card">
+      <h2>My Sightings</h2>
+
+      <div id="sightings">
+        <p>No sightings yet.</p>
+      </div>
+    </section>
+
+  </main>
+
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
 </html>
